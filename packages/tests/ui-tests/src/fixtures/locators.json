@@ -1,0 +1,36 @@
+{
+  "common": {
+    "appTitle": "[data-cy='app-heading']",
+    "visitorIntro": "[data-cy='information']"
+  },
+  "welcome": {
+    "nameLabel": "[data-cy='name-text']",
+    "nameInput": "[data-cy='input-text']",
+    "submitButton": "[data-cy='submit-button']"
+  },
+  "customerList": {
+    "table": {
+      "header": {
+        "wrapper": "[data-cy='customer-header']",
+        "name": "[data-cy='customer-company-name']",
+        "employees": "[data-cy='customer-employee-count']",
+        "size": "[data-cy='customer-company-size']"
+      },
+      "data": {
+        "wrapper": "customer-row-name",
+        "name": "[data-cy='customer-row-link']",
+        "employees": "[data-cy='customer-row-employees']",
+        "size": "[data-cy='customer-row-size']"
+      }
+    }
+  },
+  "customerDetail": {
+    "wrapper": "[data-cy='customer-details']",
+    "heading": "[data-cy='customer-details-heading']",
+    "name": "[data-cy='customer-details-name']",
+    "employees": "[data-cy='customer-details-employees']",
+    "size": "[data-cy='customer-details-size']",
+    "contact": "[data-cy='customer-details-contact']",
+    "backButton": "[data-cy='customer-details-back-button']"
+  }
+}

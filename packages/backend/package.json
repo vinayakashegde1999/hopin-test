@@ -1,0 +1,16 @@
+{
+  "name": "@hopin/backend",
+  "version": "1.0.0",
+  "description": "qa_engineer_exam_app_backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "clean": "rm -rf ./node_modules yarn.lock",
+    "start:ci": "node server.js >> backend.log 2>&1 &"
+  },
+  "author": "Eduardo Varella",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

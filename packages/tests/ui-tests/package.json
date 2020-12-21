@@ -1,0 +1,16 @@
+{
+  "name": "@hopin/ui-tests",
+  "version": "1.0.0",
+  "description": "Hopin Tech Test - UI Tests",
+  "scripts": {
+    "clean": "rm -rf ./node_modules yarn.lock",
+    "open": "cypress open",
+    "test": "cypress run"
+  },
+  "author": "Vinayaka Hegde",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^6.1.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "appTitle": "Welcome to Customer App",
+  "welcome": {
+    "introductionText": "Please provide your name:"
+  },
+  "customerList": {
+    "tableHeadings": {
+      "name": "Name",
+      "employees": "# of Employees",
+      "size": "Size"
+    }
+  },
+  "customerDetail": {
+    "heading": "Customer Details",
+    "labels": {
+      "name": "Name:",
+      "employees": "# of Employees:",
+      "size": "Size:",
+      "contact": "Contact:"
+    },
+    "noContact": "No contact info available"
+  }
+}
