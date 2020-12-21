@@ -22,7 +22,7 @@
     "cy:run": "cypress run",
     "clean": " rm -rf ./node_modules && yarn workspaces run clean",
     "build": "yarn workspace @hopin/frontend run build",
-    "start:frontend": "yarn workspace @hopin/frontend run start",
+    "start:frontend": "yarn workspace @hopin/frontend run start ",
     "start:frontend:ci": "yarn workspace @hopin/frontend run start:ci",
     "start:backend": "yarn workspace @hopin/backend run start",
     "start:backend:ci": "yarn workspace @hopin/backend run start:ci",

@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rm -rf ./node_modules yarn.lock",
     "open": "cypress open",
-    "test": "cypress run"
+    "test": "cypress run --record --key 246de6a1-97cd-4504-9f8f-ac37f437f7c6"
   },
   "author": "Vinayaka Hegde",
   "license": "ISC",

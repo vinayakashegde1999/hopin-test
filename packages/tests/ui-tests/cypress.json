@@ -22,5 +22,8 @@
   "trashAssetsBeforeRuns": true,
   "experimentalFetchPolyfill": true,
   "chromeWebSecurity": false,
-  "retries": 1
+  "retries": 1, 
+  "projectId": "w3res6",
+  "video": false
+
 }
