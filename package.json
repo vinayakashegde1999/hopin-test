@@ -1,0 +1,39 @@
+{
+  "name": "@hopin/hopin-test",
+  "version": "1.0.0",
+  "description": "Hopin-UI-API-TestScripts",
+  "main": "index.js",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "packages/tests/*"
+
+    ]
+  },
+  "dependencies": {
+    "yarn": "^1.22.10"
+  },
+  "devDependencies": {
+    "cypress": "^6.1.0"
+  },
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "clean": " rm -rf ./node_modules && yarn workspaces run clean",
+    "build": "yarn workspace @hopin/frontend run build",
+    "start:frontend": "yarn workspace @hopin/frontend run start",
+    "start:frontend:ci": "yarn workspace @hopin/frontend run start:ci",
+    "start:backend": "yarn workspace @hopin/backend run start",
+    "start:backend:ci": "yarn workspace @hopin/backend run start:ci",
+    "test:frontend": "yarn workspace @hopin/ui-tests run test",
+    "test:backend": "yarn workspace @hopin/api-tests run test"
+  },
+  "repository": "git+https://github.com/vinayakashegde1999/hopin-test.git",
+  "author": "vinayaka hegde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinayakashegde1999/hopin-test/issues"
+  },
+  "homepage": "https://github.com/vinayakashegde1999/hopin-test#readme"
+}
