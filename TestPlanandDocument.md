@@ -44,7 +44,7 @@ Clone the Repo -
     * yarn start:backend  -> to start back end coponent
     * yarn start:frontend -> to start front end coponent
 
-![Welcome Screen Image](images\Capture.PNG)
+![Welcome Screen Image](https://github.com/vinayakashegde1999/hopin-test/blob/main/images/Capture.PNG)
 
 
 ### Task- Running API Tests
