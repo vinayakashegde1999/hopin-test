@@ -1,6 +1,4 @@
-// Information taken from the REQUIREMENTS.md, specifically for the API
-// for the reason specified here:
-// https://github.com/sswales/hopin-tech-test/blob/main/testplan.md#api-vs-ui---employee-numbers-sizing
+
 export const employeeSizeDetails = {
   small: { size: 10 },
   medium: { size: 1000 },
