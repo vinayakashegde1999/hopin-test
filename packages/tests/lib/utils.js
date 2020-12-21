@@ -1,3 +1,4 @@
+export const todaysDate = new Date().toDateString();
 
 export const employeeSizeDetails = {
   small: { size: 10 },
@@ -25,4 +26,3 @@ export const getCustomer = (data, customerName) => {
   return customer;
 };
 
-export const todaysDate = new Date().toDateString();
