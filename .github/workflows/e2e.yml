@@ -1,0 +1,22 @@
+name: Tests
+on: ["push"]
+jobs:
+  build:
+    name: Build   
+    runs-on: ubuntu-latest       
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: Install
+      run: yarn
+    - name: Start Backend Service
+      run: yarn start:backend:ci
+    - name: Start Frontend Service
+      run: yarn start:frontend:ci
+    - name: Test Backend Service
+      run: yarn test:backend
+    - name: Test Backend Service
+      run: yarn test:frontend
