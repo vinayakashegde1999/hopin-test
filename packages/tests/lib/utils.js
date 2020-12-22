@@ -1,3 +1,5 @@
+import * as locators from '../ui-tests/src/fixtures/locators.json';
+
 export const todaysDate = new Date().toDateString();
 
 export const employeeSizeDetails = {
@@ -26,3 +28,6 @@ export const getCustomer = (data, customerName) => {
   return customer;
 };
 
+export const locateCustomerRow = (customerId) => {
+  return `[data-cy='${locators.customerList.table.data.wrapper}-${customerId}']`;
+};

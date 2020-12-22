@@ -2,13 +2,11 @@ import * as locators from '../fixtures/locators';
 import * as testdata from '../fixtures/testdata';
 import { getCustomerSize } from '../../../lib/utils';
 
-Cypress.Commands.add('assertCustomerDetails', (customerDetails) => {
-  // Assert Customer Details Heading
+Cypress.Commands.add('verifyCustomerDetails', (customerDetails) => {
   cy.get(locators.customerDetail.heading)
     .should('be.visible')
     .contains(testdata.customerDetail.heading);
 
-  // Assert Mandatory Data
   let customerContact;
   const size = getCustomerSize(customerDetails.employees);
   const expectedMandatoryInfo = [
@@ -29,7 +27,6 @@ Cypress.Commands.add('assertCustomerDetails', (customerDetails) => {
     cy.get(locator).should('be.visible').contains(`${label} ${item}`);
   });
 
-  // Assert Contact
   if (customerDetails.contactInfo) {
     customerContact = `${testdata.customerDetail.labels.contact} ${customerDetails.contactInfo.name} (${customerDetails.contactInfo.email})`;
   } else {
@@ -39,11 +36,10 @@ Cypress.Commands.add('assertCustomerDetails', (customerDetails) => {
     .should('be.visible')
     .contains(customerContact);
 });
+
 Cypress.Commands.add('navigateBackToList', (submit = true) => {
-  // Assert Back Button
   cy.get(locators.customerDetail.backButton).should('be.visible').and('exist');
 
-  // Return back to Customer List screen
   if (submit) {
     cy.get(locators.customerDetail.backButton).click();
   }

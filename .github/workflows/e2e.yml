@@ -2,7 +2,7 @@ name: Run E2E flow
 on: ["push"]
 jobs:
   build:
-    name: Build   
+    name: Deploy Application and Run API and UI Test cases   
     runs-on: ubuntu-latest       
     steps:
     - uses: actions/checkout@v2
@@ -10,13 +10,13 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - name: Install
+    - name: Install Project dependencies 
       run: yarn
-    - name: Start Backend Service
+    - name: Start Backend application
       run: yarn start:backend:ci
-    - name: Start Frontend Service
+    - name: Start Frontend application
       run: yarn start:frontend:ci
-    - name: Test Backend Service
+    - name: Start  Backend API Test cases
       run: yarn test:backend
-    - name: Test Backend Service
+    - name: Start  Backend API Test cases
       run: yarn test:frontend
