@@ -18,5 +18,5 @@ jobs:
       run: yarn start:frontend:ci
     - name: Start  Backend API Test cases
       run: yarn test:backend
-    - name: Start  Backend API Test cases
+    - name: Start  Frontend API Test cases
       run: yarn test:frontend
