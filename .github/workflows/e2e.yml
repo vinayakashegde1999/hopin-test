@@ -17,6 +17,8 @@ jobs:
     - name: Start Frontend application
       run: yarn start:frontend:ci
     - name: Start  Backend API Test cases
+      if: succeeded() || failed()
       run: yarn test:backend
-    - name: Start  Frontend API Test cases
+    - name: Start  Frontend UI Test cases
+      if: succeeded() || failed()
       run: yarn test:frontend
