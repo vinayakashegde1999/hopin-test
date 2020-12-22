@@ -4,14 +4,14 @@
       https://github.com/smcostareisHopin/Hopin-Exam-QE
 
 ### Changes Done to Source code:
-```
+
   Moved Source folder backend and frontend to package folder to align with Yarn
   Modifield [App.js](https://github.com/smcostareisHopin/Hopin-Exam-QE/blob/main/frontend/src/App.js) and included data-cy to the dom elements for removing dependency of copling   finding elemetns to css or id's (one of the best practises from cypress e2e)
-```
+
 
 ### Consideration
     
-```
+
     This entire excersise is performed in windows 10 machine with Firefox,Edge chrome browsers for UI Validations
     and POSTMAN client for API validations.
 
@@ -26,13 +26,13 @@
 
     During writing tests considered business logic to be same for UI and API.
     (understaning / Typo issues realted to requirement but need to be clarified.)
- ```
+ 
 
 
 ## Task Check list
 
 ### Task - Test env setup 
-```
+
 Clone the Repo - 
 * [hopin-test] (https://github.com/vinayakashegde1999/hopin-test)
 
@@ -42,32 +42,32 @@ Clone the Repo -
     * yarn start:frontend -> to start front end coponent
 
 ![Welcome Screen Image](https://github.com/vinayakashegde1999/hopin-test/blob/main/images/Capture.PNG)
-```
+
 
 ### Task- Running API Tests
-```
+
 Project detailed available in [API-TEST-DOC](https://github.com/vinayakashegde1999/hopin-test/tree/main/packages/tests/api-tests)
 
 * From the termal run below commands in the project root folder
    * yarn test:backend 
-```
+
 
 
 
 ### Task- Running UI Tests
-```
+
 Project detailed available in [UI-TEST-DOC](https://github.com/vinayakashegde1999/hopin-test/tree/main/packages/tests/ui-tests)
 
 * From the termal run below commands in the project root folder
    * yarn test:frontend
-```   
+   
    
 
 
 ### Task- Test Plan
 
 #### Requirement breakup
-```
+
 Project Overview:
         The Customers App web application is aimed to our sales people so that they can have access to our customer's contact information.
 
@@ -95,7 +95,7 @@ API
 
 
 * customer size is: Small, when # of employees is <= 10; Medium when it is <= 1000; Big otherwise.
-```
+
 ### Assumption 
 ```
 No characeter limitaion or length white spaces are accepted !.
@@ -118,14 +118,14 @@ DOM Element and  Validations to be performed
 
 ```
 ### UI Test cases 
-```
+
 
 | Pages | #Scenario | Test data | Test Result| Obseravation |
 | :---: | :---: | :---: |:---: |:---: |
 |Welcome Screen|When user Enters the Name , And Click Submit buttion Then Page should redirect to Customer List Screen|Vinayaka Hegde,1223, Vinabyaka 12301, !@#!, `,‘ or 1=1;–., 1=1;–, |PASS | All Special characters are accepted|
 |Welcome Screen|When user not entered the Name And Click Submit buttion ,Then Alert message should be pop up| |PASS | Working as expecetd |
 
-```
+
 
 ### Issues:
 
