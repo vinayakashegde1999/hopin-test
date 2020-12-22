@@ -43,6 +43,8 @@ Clone the Repo -
 
 ![Welcome Screen Image](https://github.com/vinayakashegde1999/hopin-test/blob/main/images/Capture.PNG)
 
+![POSTMAN Image](https://github.com/vinayakashegde1999/hopin-test/blob/main/images/Postman_response.PNG)
+
 
 ### Task- Running API Tests
 
@@ -163,7 +165,21 @@ Boundry value issues:
 
 United Brands with 20 employees should be Medium as condition for  small is <= 10 and medium is  <= 1000, but the result coming as  Small.
 
-Caribian Airlnis with 1000 employees should be Medium as medium is <= 1000, but the result coming as  Big.   
+Caribian Airlnis with 1000 employees should be Medium as medium is <= 1000, but the result coming as  Big. 
+
+Name data type is not validated 
+```
+ex: 
+curl --location --request POST 'http://localhost:3001/' \
+--header 'Content-Type: application/json' \
+--data-raw '{"name":{"name":{
+    "name":[false]}}}
+    
+Response:
+         
+         {"name":{"name":{"name":[false]}},"timestamp":"Mon Dec 21 2020","customers":[{"id":1,"name":"Americas Inc.","employees":10,"contactInfo":{"name":"John Smith","email":"jsmith@americasinc.com"},"size":"Small"},{"id":2,"name":"Caribian Airlnis","employees":1000,"contactInfo":{"name":"Jose Martinez","email":"martines@cair.com"},"size":"Big"},{"id":3,"name":"MacroSoft","employees":540,"contactInfo":{"name":"Bill Paxton","email":"bp@ms.com"},"size":"Medium"},{"id":4,"name":"United Brands","employees":20,"size":"Small"},{"id":5,"name":"Bananas Corp","employees":10000,"contactInfo":{"name":"Xavier Hernandez","email":"xavier@bananas.com"},"size":"Big"},{"id":6,"name":"XPTO.com","employees":102,"contactInfo":{"name":"Daniel Zuck","email":"zuckh@xpto.com"},"size":"Medium"}]}
+         
+```
 
 
 ## GIT Hub action
