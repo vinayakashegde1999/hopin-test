@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "clean": "rm -rf ./node_modules yarn.lock",
-    "start:ci": "node server.js >> backend.log 2>&1 &"
+    "start:githubci": "node server.js >> backend.log 2>&1 &"
   },
   "author": "Eduardo Varella",
   "license": "ISC",
