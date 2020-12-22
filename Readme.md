@@ -176,7 +176,7 @@ Github action UI test step overivew
 
 Cypress dashboard overview
 
-![cypress overview ](https://github.com/vinayakashegde1999/hopin-test/blob/main/images/cypress_dashboard.PNG
+![cypress overview ](https://github.com/vinayakashegde1999/hopin-test/blob/main/images/cypress_dashboard.PNG)
 
 
     
