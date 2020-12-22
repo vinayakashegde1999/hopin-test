@@ -124,6 +124,13 @@ DOM Element and  Validations to be performed
 | :---: | :---: | :---: |:---: |:---: |
 |Welcome Screen|When user Enters the Name , And Click Submit buttion Then Page should redirect to Customer List Screen|Vinayaka Hegde,1223, Vinabyaka 12301, !@#!, `,‘ or 1=1;–., 1=1;–, |PASS | All Special characters are accepted|
 |Welcome Screen|When user not entered the Name And Click Submit buttion ,Then Alert message should be pop up| |PASS | Working as expecetd |
+|Customer List|Verify all the customer details against the API /| PASS|Works as expected|
+|Customer List|Verify all the dynamic texts like Name and Present date |PASS|Works as expected|
+|Customer List | Verify all the hyper Links |FAIL|Possibility of test case faile due to missing contanct details but need more test data to prove this|
+|Customer details|Verify all the details agaisnt the API response |PASS |Works as expected |
+|Customer details|Verify Back button navigation |PASS |Works as expected |
+
+
 
 
 
