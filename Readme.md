@@ -159,6 +159,25 @@ United Brands with 20 employees should be Medium as condition for  small is <= 1
 Caribian Airlnis with 1000 employees should be Medium as medium is <= 1000, but the result coming as  Big.   
 
 
+## GIT Hub action
+
+Used Latest Ubuntu OS 
+Since there are expected failuers in the api and used conditional always() step so that steps wont skip on failuers/errors.
+
+Github action overview
+![Steps overview ](https://github.com/vinayakashegde1999/hopin-test/blob/main/images/github_action_overview.PNG)
+
+Github action api test step overivew
+![api overview ](https://github.com/vinayakashegde1999/hopin-test/blob/main/images/github_action_api_test_results.PNG)
+
+
+Github action UI test step overivew
+![ui overview ]https://github.com/vinayakashegde1999/hopin-test/blob/main/images/github_action_UI_test_results.PNG)
+
+Cypress dashboard overview
+
+![cypress overview ]https://github.com/vinayakashegde1999/hopin-test/blob/main/images/cypress_dashboard.PNG
+
 
     
 
