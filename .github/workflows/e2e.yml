@@ -14,9 +14,9 @@ jobs:
     - name: Install Project dependencies 
       run: yarn
     - name: Start Backend application
-      run: yarn start:backend:ci
+      run: yarn start:backend:githubci
     - name: Start Frontend application
-      run: yarn start:frontend:ci
+      run: yarn start:frontend:githubci
     - name: Start  Backend API Test cases
       if: always()
       run: yarn test:backend
