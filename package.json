@@ -23,9 +23,9 @@
     "clean": " rm -rf ./node_modules && yarn workspaces run clean",
     "build": "yarn workspace @hopin/frontend run build",
     "start:frontend": "yarn workspace @hopin/frontend run start ",
-    "start:frontend:ci": "yarn workspace @hopin/frontend run start:ci",
+    "start:frontend:githubci": "yarn workspace @hopin/frontend run start:githubci",
     "start:backend": "yarn workspace @hopin/backend run start",
-    "start:backend:ci": "yarn workspace @hopin/backend run start:ci",
+    "start:backend:githubci": "yarn workspace @hopin/backend run start:githubci",
     "test:frontend": "yarn workspace @hopin/ui-tests run test",
     "test:backend": "yarn workspace @hopin/api-tests run test"
   },
