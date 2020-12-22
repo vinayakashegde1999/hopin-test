@@ -2,7 +2,11 @@
 
 To run the test eitehr be in the root folder or in hopin-test\packages\tests\ui-tests> First time run yarn
 
-yarn test:frontend -> from the root folder OR cypress open / cypress run from the api test folder
+yarn test:frontend -> from the root folder
+
+OR 
+
+cypress open / cypress run from the api test folder
 
 To visulise the cypress dashboard login to cypress dash board Collect the Project key and record key and replace in [package.json](https://github.com/vinayakashegde1999/hopin-test/blob/f9fb590f282058faaa6c96e52ec1345c883c7770/packages/tests/ui-tests/package.json#L8) and [cypress.json](https://github.com/vinayakashegde1999/hopin-test/blob/f9fb590f282058faaa6c96e52ec1345c883c7770/packages/tests/ui-tests/cypress.json#L26)
 
