@@ -14,6 +14,7 @@ and [cypress.json](https://github.com/vinayakashegde1999/hopin-test/blob/9f4790f
 
 
 ### Folder structure 
+```
 ├───api-tests                 
 │   ├───cypress
 │   │   ├───fixtures          
@@ -39,3 +40,4 @@ and [cypress.json](https://github.com/vinayakashegde1999/hopin-test/blob/9f4790f
         ├───fixtures
         ├───integration  ### Test cases for each UI Pages
         └───support
+```
